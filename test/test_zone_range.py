@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.zone_range import ZoneRange  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestZoneRange(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestZoneRange(unittest.TestCase):
     def testZoneRange(self):
         """Test ZoneRange"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.zone_range.ZoneRange()  # noqa: E501
+        # model = strava_client.models.zone_range.ZoneRange()  # noqa: E501
         pass
 
 

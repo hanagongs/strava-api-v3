@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from api.running_races_api import RunningRacesApi  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestRunningRacesApi(unittest.TestCase):

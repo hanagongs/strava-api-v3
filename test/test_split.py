@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.split import Split  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestSplit(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSplit(unittest.TestCase):
     def testSplit(self):
         """Test Split"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.split.Split()  # noqa: E501
+        # model = strava_client.models.split.Split()  # noqa: E501
         pass
 
 

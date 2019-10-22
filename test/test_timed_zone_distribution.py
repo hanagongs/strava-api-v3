@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.timed_zone_distribution import TimedZoneDistribution  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestTimedZoneDistribution(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestTimedZoneDistribution(unittest.TestCase):
     def testTimedZoneDistribution(self):
         """Test TimedZoneDistribution"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.timed_zone_distribution.TimedZoneDistribution()  # noqa: E501
+        # model = strava_client.models.timed_zone_distribution.TimedZoneDistribution()  # noqa: E501
         pass
 
 

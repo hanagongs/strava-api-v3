@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.distance_stream import DistanceStream  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestDistanceStream(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDistanceStream(unittest.TestCase):
     def testDistanceStream(self):
         """Test DistanceStream"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.distance_stream.DistanceStream()  # noqa: E501
+        # model = strava_client.models.distance_stream.DistanceStream()  # noqa: E501
         pass
 
 

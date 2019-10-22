@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.activity_zone import ActivityZone  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestActivityZone(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestActivityZone(unittest.TestCase):
     def testActivityZone(self):
         """Test ActivityZone"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.activity_zone.ActivityZone()  # noqa: E501
+        # model = strava_client.models.activity_zone.ActivityZone()  # noqa: E501
         pass
 
 

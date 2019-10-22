@@ -1,4 +1,4 @@
-# swagger_client.StreamsApi
+# strava_client.StreamsApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -20,16 +20,16 @@ Returns the given activity's streams. Requires activity:read scope. Requires act
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.StreamsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.StreamsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the activity.
 keys = ['keys_example'] # list[str] | Desired stream types.
 key_by_type = true # bool | Must be true.
@@ -76,16 +76,16 @@ Returns the given route's streams. Requires read_all scope for private routes.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.StreamsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.StreamsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the route.
 
 try:
@@ -128,16 +128,16 @@ Returns a set of streams for a segment effort completed by the authenticated ath
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.StreamsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.StreamsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the segment effort.
 keys = ['keys_example'] # list[str] | The types of streams to return.
 key_by_type = true # bool | Must be true.
@@ -184,16 +184,16 @@ Returns the given segment's streams. Requires read_all scope for private segment
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.StreamsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.StreamsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the segment.
 keys = ['keys_example'] # list[str] | The types of streams to return.
 key_by_type = true # bool | Must be true.

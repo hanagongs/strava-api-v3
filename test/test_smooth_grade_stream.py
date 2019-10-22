@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.smooth_grade_stream import SmoothGradeStream  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestSmoothGradeStream(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestSmoothGradeStream(unittest.TestCase):
     def testSmoothGradeStream(self):
         """Test SmoothGradeStream"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.smooth_grade_stream.SmoothGradeStream()  # noqa: E501
+        # model = strava_client.models.smooth_grade_stream.SmoothGradeStream()  # noqa: E501
         pass
 
 

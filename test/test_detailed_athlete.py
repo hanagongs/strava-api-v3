@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.detailed_athlete import DetailedAthlete  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestDetailedAthlete(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDetailedAthlete(unittest.TestCase):
     def testDetailedAthlete(self):
         """Test DetailedAthlete"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.detailed_athlete.DetailedAthlete()  # noqa: E501
+        # model = strava_client.models.detailed_athlete.DetailedAthlete()  # noqa: E501
         pass
 
 

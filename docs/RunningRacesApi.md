@@ -1,4 +1,4 @@
-# swagger_client.RunningRacesApi
+# strava_client.RunningRacesApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -18,16 +18,16 @@ Returns a running race for a given identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RunningRacesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.RunningRacesApi(strava_client.ApiClient(configuration))
 id = 56 # int | The identifier of the running race.
 
 try:
@@ -70,16 +70,16 @@ Returns a list running races based on a set of search criteria.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.RunningRacesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.RunningRacesApi(strava_client.ApiClient(configuration))
 year = 56 # int | Filters the list by a given year. (optional)
 
 try:

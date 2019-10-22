@@ -1,4 +1,4 @@
-# swagger_client.ActivitiesApi
+# strava_client.ActivitiesApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -24,24 +24,24 @@ Creates a manual activity for an athlete, requires activity:write scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 name = 'name_example' # str | 
 type = 'type_example' # str | 
-start_date_local = swagger_client.Object() # Object | 
+start_date_local = strava_client.Object() # Object | 
 elapsed_time = 56 # int | 
 description = 'description_example' # str | 
 distance = 3.4 # float | 
 trainer = 56 # int | 
-photo_ids = swagger_client.Object() # Object | 
+photo_ids = strava_client.Object() # Object | 
 commute = 56 # int | 
 
 try:
@@ -92,16 +92,16 @@ Returns the given activity that is owned by the authenticated athlete. Requires 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the activity.
 include_all_efforts = true # bool | To include all segments efforts. (optional)
 
@@ -146,16 +146,16 @@ Returns the comments on the given activity. Requires activity:read for Everyone 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the activity.
 page = 56 # int | Page number. (optional)
 per_page = 56 # int | Number of items per page. Defaults to 30. (optional)
@@ -202,16 +202,16 @@ Returns the athletes who kudoed an activity identified by an identifier. Require
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 56 # int | The identifier of the activity.
 page = 56 # int | Page number. (optional)
 per_page = 56 # int | Number of items per page. Defaults to 30. (optional)
@@ -258,16 +258,16 @@ Returns the laps of an activity identified by an identifier. Requires activity:r
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the activity.
 
 try:
@@ -310,16 +310,16 @@ Returns the activities of an athlete for a specific identifier. Requires activit
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 before = 56 # int | An epoch timestamp to use for filtering activities that have taken place before a certain time. (optional)
 after = 56 # int | An epoch timestamp to use for filtering activities that have taken place after a certain time. (optional)
 page = 56 # int | Page number. (optional)
@@ -368,16 +368,16 @@ Summit Feature. Returns the zones of a given activity. Requires activity:read fo
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 56 # int | The identifier of the activity.
 
 try:
@@ -420,18 +420,18 @@ Updates the given activity that is owned by the authenticated athlete. Requires 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.ActivitiesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.ActivitiesApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the activity.
-body = swagger_client.UpdatableActivity() # UpdatableActivity |  (optional)
+body = strava_client.UpdatableActivity() # UpdatableActivity |  (optional)
 
 try:
     # Update Activity

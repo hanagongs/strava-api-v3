@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.power_stream import PowerStream  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestPowerStream(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestPowerStream(unittest.TestCase):
     def testPowerStream(self):
         """Test PowerStream"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.power_stream.PowerStream()  # noqa: E501
+        # model = strava_client.models.power_stream.PowerStream()  # noqa: E501
         pass
 
 

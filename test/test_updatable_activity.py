@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.updatable_activity import UpdatableActivity  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestUpdatableActivity(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestUpdatableActivity(unittest.TestCase):
     def testUpdatableActivity(self):
         """Test UpdatableActivity"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.updatable_activity.UpdatableActivity()  # noqa: E501
+        # model = strava_client.models.updatable_activity.UpdatableActivity()  # noqa: E501
         pass
 
 

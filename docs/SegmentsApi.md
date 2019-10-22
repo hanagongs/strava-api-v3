@@ -1,4 +1,4 @@
-# swagger_client.SegmentsApi
+# strava_client.SegmentsApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -21,16 +21,16 @@ Returns the top 10 segments matching a specified query.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SegmentsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.SegmentsApi(strava_client.ApiClient(configuration))
 bounds = [3.4] # list[float] | The latitude and longitude for two points describing a rectangular boundary for the search: [southwest corner latitutde, southwest corner longitude, northeast corner latitude, northeast corner longitude]
 activity_type = 'activity_type_example' # str | Desired activity type. (optional)
 min_cat = 56 # int | The minimum climbing category. (optional)
@@ -79,16 +79,16 @@ Returns the specified segment leaderboard.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SegmentsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.SegmentsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the segment leaderboard.
 gender = 'gender_example' # str | Filter by gender. (optional)
 age_group = 'age_group_example' # str | Summit Feature. Filter by age group. (optional)
@@ -149,16 +149,16 @@ List of the authenticated athlete's starred segments. Private segments are filte
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SegmentsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.SegmentsApi(strava_client.ApiClient(configuration))
 page = 56 # int | Page number. (optional)
 per_page = 56 # int | Number of items per page. Defaults to 30. (optional)
 
@@ -203,16 +203,16 @@ Returns the specified segment. read_all scope required in order to retrieve athl
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SegmentsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.SegmentsApi(strava_client.ApiClient(configuration))
 id = 789 # int | The identifier of the segment.
 
 try:
@@ -255,16 +255,16 @@ Stars/Unstars the given segment for the authenticated athlete. Requires profile:
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.SegmentsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.SegmentsApi(strava_client.ApiClient(configuration))
 starred = true # bool | 
 id = 789 # int | The identifier of the segment to star.
 

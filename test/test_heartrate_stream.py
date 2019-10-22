@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.heartrate_stream import HeartrateStream  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestHeartrateStream(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestHeartrateStream(unittest.TestCase):
     def testHeartrateStream(self):
         """Test HeartrateStream"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.heartrate_stream.HeartrateStream()  # noqa: E501
+        # model = strava_client.models.heartrate_stream.HeartrateStream()  # noqa: E501
         pass
 
 

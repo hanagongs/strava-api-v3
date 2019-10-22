@@ -1,4 +1,4 @@
-# swagger_client.AthletesApi
+# strava_client.AthletesApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -20,16 +20,16 @@ Returns the currently authenticated athlete. Tokens with profile:read_all scope 
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AthletesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.AthletesApi(strava_client.ApiClient(configuration))
 
 try:
     # Get Authenticated Athlete
@@ -68,16 +68,16 @@ Returns the the authenticated athlete's heart rate and power zones. Requires pro
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AthletesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.AthletesApi(strava_client.ApiClient(configuration))
 
 try:
     # Get Zones
@@ -116,16 +116,16 @@ Returns the activity stats of an athlete.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AthletesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.AthletesApi(strava_client.ApiClient(configuration))
 id = 56 # int | The identifier of the athlete. Must match the authenticated athlete.
 page = 56 # int | Page number. (optional)
 per_page = 56 # int | Number of items per page. Defaults to 30. (optional)
@@ -172,16 +172,16 @@ Update the currently authenticated athlete. Requires profile:write scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.AthletesApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.AthletesApi(strava_client.ApiClient(configuration))
 weight = 3.4 # float | The weight of the athlete in kilograms.
 
 try:

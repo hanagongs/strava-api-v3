@@ -1,4 +1,4 @@
-# swagger_client.GearsApi
+# strava_client.GearsApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -17,16 +17,16 @@ Returns an equipment using its identifier.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.GearsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.GearsApi(strava_client.ApiClient(configuration))
 id = 'id_example' # str | The identifier of the gear.
 
 try:

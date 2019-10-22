@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.explorer_response import ExplorerResponse  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestExplorerResponse(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestExplorerResponse(unittest.TestCase):
     def testExplorerResponse(self):
         """Test ExplorerResponse"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.explorer_response.ExplorerResponse()  # noqa: E501
+        # model = strava_client.models.explorer_response.ExplorerResponse()  # noqa: E501
         pass
 
 

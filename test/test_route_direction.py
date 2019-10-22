@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.route_direction import RouteDirection  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestRouteDirection(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestRouteDirection(unittest.TestCase):
     def testRouteDirection(self):
         """Test RouteDirection"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.route_direction.RouteDirection()  # noqa: E501
+        # model = strava_client.models.route_direction.RouteDirection()  # noqa: E501
         pass
 
 

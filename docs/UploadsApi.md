@@ -1,4 +1,4 @@
-# swagger_client.UploadsApi
+# strava_client.UploadsApi
 
 All URIs are relative to *https://www.strava.com/api/v3*
 
@@ -18,16 +18,16 @@ Uploads a new data file to create an activity from. Requires activity:write scop
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UploadsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.UploadsApi(strava_client.ApiClient(configuration))
 file = 'file_example' # file |  (optional)
 name = 'name_example' # str |  (optional)
 description = 'description_example' # str |  (optional)
@@ -82,16 +82,16 @@ Returns an upload for a given identifier. Requires activity:write scope.
 ```python
 from __future__ import print_function
 import time
-import swagger_client
-from swagger_client.rest import ApiException
+import strava_client
+from strava_client.rest import ApiException
 from pprint import pprint
 
 # Configure OAuth2 access token for authorization: strava_oauth
-configuration = swagger_client.Configuration()
+configuration = strava_client.Configuration()
 configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
 # create an instance of the API class
-api_instance = swagger_client.UploadsApi(swagger_client.ApiClient(configuration))
+api_instance = strava_client.UploadsApi(strava_client.ApiClient(configuration))
 upload_id = 789 # int | The identifier of the upload.
 
 try:

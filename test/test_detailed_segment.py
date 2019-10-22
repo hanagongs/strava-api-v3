@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.detailed_segment import DetailedSegment  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestDetailedSegment(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestDetailedSegment(unittest.TestCase):
     def testDetailedSegment(self):
         """Test DetailedSegment"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.detailed_segment.DetailedSegment()  # noqa: E501
+        # model = strava_client.models.detailed_segment.DetailedSegment()  # noqa: E501
         pass
 
 

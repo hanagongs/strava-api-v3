@@ -14,9 +14,9 @@ from __future__ import absolute_import
 
 import unittest
 
-import swagger_client
+import strava_client
 from models.lat_lng import LatLng  # noqa: E501
-from swagger_client.rest import ApiException
+from strava_client.rest import ApiException
 
 
 class TestLatLng(unittest.TestCase):
@@ -31,7 +31,7 @@ class TestLatLng(unittest.TestCase):
     def testLatLng(self):
         """Test LatLng"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.lat_lng.LatLng()  # noqa: E501
+        # model = strava_client.models.lat_lng.LatLng()  # noqa: E501
         pass
 
 
